@@ -24,8 +24,8 @@ void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
 
 
-EEPROM.write(0, 58 >> 8);
-EEPROM.write(1, 58 & 0xFF);
+//EEPROM.write(0, 58 >> 8);
+//EEPROM.write(1, 58 & 0xFF);
 
 secret = (EEPROM.read(0) << 8) + EEPROM.read(1);
 
